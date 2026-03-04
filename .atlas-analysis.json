@@ -1,0 +1,145 @@
+{
+  "projectType": "saas",
+  "projectName": "EduBot (AURA)",
+  "projectDescription": "AI-powered educational assistant platform for Spanish language and mathematics learning with interactive exercises, real-time feedback, and personalized tutoring.",
+  "theme": "almond",
+  "primaryColor": "#135bec",
+  "lightColor": "#50E3C2",
+  "darkColor": "#0a3d8f",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["introduction", "quickstart", "installation"]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/aura-assistant",
+              "concepts/educational-modules",
+              "concepts/mcp-integration"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/teacher-dashboard",
+              "features/student-dashboard",
+              "features/exercise-system",
+              "features/ai-corrections",
+              "features/dark-mode"
+            ]
+          },
+          {
+            "group": "Educational Modules",
+            "pages": [
+              "modules/spanish-language",
+              "modules/mathematics",
+              "modules/grammar",
+              "modules/orthography",
+              "modules/equations",
+              "modules/combined-operations"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/deployment",
+              "guides/configuration",
+              "guides/environment-variables",
+              "guides/adding-modules"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Assistant API",
+            "pages": [
+              "api/overview",
+              "api/interact",
+              "api/correct",
+              "api/generate-exercise",
+              "api/explain",
+              "api/modules"
+            ]
+          },
+          {
+            "group": "Exercises API",
+            "pages": [
+              "api/exercises/get-by-module",
+              "api/exercises/get-by-ids",
+              "api/exercises/theory"
+            ]
+          },
+          {
+            "group": "DTOs & Schemas",
+            "pages": [
+              "api/schemas/chat-message",
+              "api/schemas/chat-response",
+              "api/schemas/educational-context"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Frontend",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "frontend/setup",
+              "frontend/structure",
+              "frontend/routing"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "frontend/components/sidebar",
+              "frontend/components/exercises",
+              "frontend/components/dashboards"
+            ]
+          },
+          {
+            "group": "Styling",
+            "pages": [
+              "frontend/tailwind",
+              "frontend/dark-mode",
+              "frontend/responsive-design"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-powered educational assistance using Google Gemini",
+    "Interactive exercises for Spanish language and mathematics",
+    "Real-time exercise correction with detailed explanations",
+    "Teacher and student dashboards with progress tracking",
+    "Model Context Protocol (MCP) integration for educational content",
+    "Exercise generation with difficulty levels (basic, intermediate, advanced)",
+    "Conversational AI interface for natural learning",
+    "Dark mode support with responsive design"
+  ],
+  "publicApiSurface": [
+    "POST /assistant/interact - Main assistant interaction endpoint",
+    "POST /assistant/correct - Correct exercises with AI feedback",
+    "POST /assistant/generate-exercise - Generate new exercises",
+    "POST /assistant/explain - Get topic explanations",
+    "POST /assistant/correct-answer - Correct specific answers",
+    "GET /assistant/modules - Get available educational modules",
+    "GET /assistant/exercises/:module - Get exercises by module",
+    "GET /assistant/exercises-by-ids/:ids - Get exercises by IDs",
+    "GET /assistant/theory/:exerciseId - Get theory for exercise",
+    "GET /assistant/theory-simplified/:exerciseId - Get simplified explanations",
+    "GET /assistant/Edu - Health check endpoint"
+  ]
+}
